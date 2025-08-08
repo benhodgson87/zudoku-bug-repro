@@ -6,6 +6,7 @@ const config: ZudokuConfig = {
     { type: "link", label: "Orders API", to: "/orders-api-spec" },
     { type: "link", label: "Products API", to: "/products-api-spec" },
   ],
+  redirects: [{ from: "/", to: "/users-api-spec" }],
   catalogs: {
     path: "/api-specs",
     label: "API Specs",
