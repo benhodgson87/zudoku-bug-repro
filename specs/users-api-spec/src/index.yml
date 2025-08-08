@@ -9,6 +9,9 @@ paths:
   /users:
     get:
       summary: List users
+      tags:
+        - Users
+        - Authentication
       responses:
         "200":
           description: OK
@@ -21,6 +24,9 @@ paths:
   /users/{id}:
     get:
       summary: Get user by ID
+      tags:
+        - Users
+        - Authentication
       parameters:
         - in: path
           name: id

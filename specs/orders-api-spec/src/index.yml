@@ -9,6 +9,9 @@ paths:
   /orders:
     get:
       summary: List orders
+      tags:
+        - Orders
+        - Retrieval
       responses:
         "200":
           description: OK
@@ -21,6 +24,9 @@ paths:
   /orders/{id}:
     get:
       summary: Get order by ID
+      tags:
+        - Orders
+        - Retrieval
       parameters:
         - in: path
           name: id

@@ -2,5 +2,13 @@
   "name": "zudoku-repro",
   "private": true,
   "version": "0.0.1",
-  "description": "Minimal reproduction for Zudoku integration using dummy API specs"
+  "description": "Minimal reproduction for Zudoku integration using dummy API specs",
+  "workspaces": [
+    "docs/*",
+    "specs/*"
+  ],
+  "scripts": {
+    "docs:dev": "npm run --workspace=docs dev",
+    "docs:build": "npm run --workspace=docs build"
+  }
 }

@@ -9,6 +9,9 @@ paths:
   /products:
     get:
       summary: List products
+      tags:
+        - Products
+        - Catalog
       responses:
         "200":
           description: OK
@@ -21,6 +24,9 @@ paths:
   /products/{id}:
     get:
       summary: Get product by ID
+      tags:
+        - Products
+        - Catalog
       parameters:
         - in: path
           name: id
