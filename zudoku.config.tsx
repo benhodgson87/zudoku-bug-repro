@@ -8,7 +8,7 @@ const config: ZudokuConfig = {
   ],
   redirects: [{ from: "/", to: "/users-api-spec" }],
   catalogs: {
-    path: "/api-specs",
+    path: "/catalog",
     label: "API Specs",
     items: ["users-api-spec", "orders-api-spec", "products-api-spec"],
   },
