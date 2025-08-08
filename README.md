@@ -18,14 +18,9 @@ npm install --prefix docs
 npm run docs:build
 ```
 
-The output will be in `docs/dist`.
-
-## Structure
-
-- `docs` — Zudoku app (dev & build)
-- `specs` — dummy API specs: users, orders, products
+The output will be in `dist`.
 
 ## Notes
 
-- Specs are wired in via local file inputs in `docs/zudoku.config.tsx`
+- Specs are wired in via local file inputs in `zudoku.config.tsx`
 - No proprietary content, assets, or secrets are included
