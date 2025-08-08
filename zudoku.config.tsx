@@ -1,7 +1,7 @@
 import type { ZudokuConfig } from "zudoku";
 
 const config: ZudokuConfig = {
-  basePath: process.env.BASE_PATH || "/",
+  basePath: process.env.GITHUB_ACTIONS ? "/zudoku-bug-repro" : "/",
   navigation: [
     { type: "link", label: "Users API", to: "/users-api-spec" },
     { type: "link", label: "Orders API", to: "/orders-api-spec" },
