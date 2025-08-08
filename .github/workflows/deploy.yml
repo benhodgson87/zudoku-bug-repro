@@ -35,6 +35,8 @@ jobs:
 
       - name: Build with Zudoku
         run: npm run docs:build
+        env:
+          BASE_PATH: /zudoku-bug-repro
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
