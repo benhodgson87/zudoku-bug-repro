@@ -5,7 +5,7 @@ This is a minimal, standalone reproduction of our Zudoku integration using gener
 ## Run locally
 
 ```bash
-npm install --prefix docs
+npm install
 npm run docs:dev
 ```
 
@@ -14,7 +14,7 @@ Then open http://localhost:3000
 ## Build static site
 
 ```bash
-npm install --prefix docs
+npm install
 npm run docs:build
 ```
 
