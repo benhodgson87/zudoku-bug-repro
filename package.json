@@ -1,0 +1,6 @@
+{
+  "name": "zudoku-repro",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Minimal reproduction for Zudoku integration using dummy API specs"
+}

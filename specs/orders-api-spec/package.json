@@ -1,0 +1,16 @@
+{
+  "name": "@example/orders-api-spec",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Orders API specification (dummy)",
+  "main": "src/index.yml",
+  "scripts": {
+    "validate:spec": "swagger-cli validate src/index.yml",
+    "build:docs": "redocly build-docs src/index.yml --output dist/index.html",
+    "prebuild:docs": "mkdir -p dist"
+  },
+  "devDependencies": {
+    "swagger-cli": "^4.0.4",
+    "@redocly/cli": "^1.34.2"
+  }
+}

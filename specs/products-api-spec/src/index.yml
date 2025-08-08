@@ -1,0 +1,50 @@
+openapi: 3.0.3
+info:
+  title: Products API
+  version: 0.1.0
+  description: Generic Products API for demonstration
+servers:
+  - url: https://api.example.com
+paths:
+  /products:
+    get:
+      summary: List products
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Product"
+  /products/{id}:
+    get:
+      summary: Get product by ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Product"
+components:
+  schemas:
+    Product:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        price:
+          type: number
+        createdAt:
+          type: string
+          format: date-time
