@@ -5,9 +5,7 @@
   "description": "Users API specification (dummy)",
   "main": "src/index.yml",
   "scripts": {
-    "validate:spec": "swagger-cli validate src/index.yml",
-    "build:docs": "redocly build-docs src/index.yml --output dist/index.html",
-    "prebuild:docs": "mkdir -p dist"
+    "validate:spec": "swagger-cli validate src/index.yml"
   },
   "devDependencies": {
     "swagger-cli": "^4.0.4",
