@@ -8,7 +8,6 @@
     "validate:spec": "swagger-cli validate src/index.yml"
   },
   "devDependencies": {
-    "swagger-cli": "^4.0.4",
-    "@redocly/cli": "^1.34.2"
+    "swagger-cli": "^4.0.4"
   }
 }
